@@ -10,6 +10,10 @@ export const routes: Routes = [
   {
     path: 'hero',
     component: HeroPage
+  },
+  {
+    path: '**', //cualquier path que no exista
+    redirectTo: '' // apunta al primer path ('')
   }
 
 ];
